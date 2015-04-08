@@ -37,9 +37,8 @@ And I should not see "2001: A Space Odyssey"
 And I should not see "Chicken Run"
 
 
-Scenario: all ratings selected
+Scenario: all checkboxes selected
 When I check the following ratings: PG, R, PG-13, NC-17, G
 And I press "ratings_submit"
 Then I should be on the home page 
 And I should see all of the movies
-  # see assignment
